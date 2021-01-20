@@ -1,0 +1,1 @@
+[14-Feb-2020 17:02:49 Asia/Jakarta] PHP Fatal error:  Call to a member function setPaper() on null in /home3/multijay/public_html/application/controllers/E_order.php on line 20

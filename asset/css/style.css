@@ -1,0 +1,34 @@
+/* #wizard_advanced .actions ul li.button_finish {
+    display: none !;
+} */
+.md-list-addon>li {
+    margin-left: 0;
+}
+.md-list-addon>li #passPeserta {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+}
+#page_content_inner .md-card table.uk-table tbody .uk-modal .uk-modal-dialog>img {
+    display: block;
+    margin: 0 auto;
+    height: 70vh;
+}
+#page_content_inner .md-card table.uk-table tbody .uk-modal .uk-modal-dialog .uk-modal-header>h3 {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #page_content_inner .md-card table.uk-table tbody .uk-modal .uk-modal-dialog>img {
+        height: 50vh;
+    }
+  }
+  @media (max-width: 320px) {
+    #page_content_inner .md-card table.uk-table tbody .uk-modal .uk-modal-dialog .uk-modal-header>h3 {
+        font-size: 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    #page_content_inner .md-card .md-card-content .uk-grid .uk-width-medium-1-2 .uk-grid .uk-width-large-1-6 .user_heading_avatar .thumbnail {
+        margin: 0 auto;
+    }
+  }
