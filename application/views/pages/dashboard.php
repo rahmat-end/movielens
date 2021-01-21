@@ -135,7 +135,7 @@
                         <div class="md-card-content">
                             <h4 class="heading_c uk-margin-bottom">Grafik Age</h4>
                             <div id="chartist_simple_pie3" class="chartist chartist-labels-inside"></div>
-                            <div style="display: flex; justify-content: center">
+                            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
                                 <div style="display: flex; align-items: center; margin-right: 15px;">
                                     <div style="display: inline-block; width: 8px; height: 8px; background-color: #1F77B4; margin-right: 6px; border: none;"></div>
                                     <p>0 - 20</p>

@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 11, 2021 at 09:07 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Host: localhost
+-- Waktu pembuatan: 21 Jan 2021 pada 07.28
+-- Versi server: 10.4.8-MariaDB
+-- Versi PHP: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,7 +36,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `username`, `password`, `nama_admin`) VALUES
@@ -45,7 +46,7 @@ INSERT INTO `admin` (`id_admin`, `username`, `password`, `nama_admin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data`
+-- Struktur dari tabel `data`
 --
 
 CREATE TABLE `data` (
@@ -56,7 +57,7 @@ CREATE TABLE `data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `data`
+-- Dumping data untuk tabel `data`
 --
 
 INSERT INTO `data` (`id_user`, `id_item`, `rating`, `timestamp`) VALUES
@@ -931,7 +932,7 @@ INSERT INTO `data` (`id_user`, `id_item`, `rating`, `timestamp`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item`
+-- Struktur dari tabel `item`
 --
 
 CREATE TABLE `item` (
@@ -962,7 +963,7 @@ CREATE TABLE `item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `item`
+-- Dumping data untuk tabel `item`
 --
 
 INSERT INTO `item` (`id_item`, `movie`, `release_date`, `video_release_date`, `imdb_url`, `unknown`, `action`, `adventure`, `animation`, `children`, `comedy`, `crime`, `documentary`, `drama`, `fantasy`, `film_noir`, `horror`, `musical`, `mystery`, `romance`, `sci_fi`, `thriller`, `war`, `western`) VALUES
@@ -1070,7 +1071,7 @@ INSERT INTO `item` (`id_item`, `movie`, `release_date`, `video_release_date`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `occupation`
+-- Struktur dari tabel `occupation`
 --
 
 CREATE TABLE `occupation` (
@@ -1079,7 +1080,7 @@ CREATE TABLE `occupation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `occupation`
+-- Dumping data untuk tabel `occupation`
 --
 
 INSERT INTO `occupation` (`id_occupation`, `name_occupation`) VALUES
@@ -1108,7 +1109,7 @@ INSERT INTO `occupation` (`id_occupation`, `name_occupation`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rating_matrix`
+-- Struktur dari tabel `rating_matrix`
 --
 
 CREATE TABLE `rating_matrix` (
@@ -1212,7 +1213,7 @@ CREATE TABLE `rating_matrix` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `rating_matrix`
+-- Dumping data untuk tabel `rating_matrix`
 --
 
 INSERT INTO `rating_matrix` (`id_user`, `Rui_1`, `Rui_2`, `Rui_3`, `Rui_4`, `Rui_5`, `Rui_6`, `Rui_7`, `Rui_8`, `Rui_9`, `Rui_10`, `Rui_11`, `Rui_12`, `Rui_13`, `Rui_14`, `Rui_15`, `Rui_16`, `Rui_17`, `Rui_19`, `Rui_20`, `Rui_21`, `Rui_22`, `Rui_23`, `Rui_24`, `Rui_25`, `Rui_26`, `Rui_27`, `Rui_28`, `Rui_29`, `Rui_30`, `Rui_31`, `Rui_32`, `Rui_33`, `Rui_34`, `Rui_36`, `Rui_37`, `Rui_38`, `Rui_39`, `Rui_40`, `Rui_41`, `Rui_42`, `Rui_43`, `Rui_44`, `Rui_45`, `Rui_47`, `Rui_48`, `Rui_49`, `Rui_50`, `Rui_51`, `Rui_52`, `Rui_53`, `Rui_54`, `Rui_55`, `Rui_56`, `Rui_57`, `Rui_58`, `Rui_59`, `Rui_60`, `Rui_61`, `Rui_62`, `Rui_63`, `Rui_64`, `Rui_65`, `Rui_66`, `Rui_67`, `Rui_68`, `Rui_69`, `Rui_70`, `Rui_71`, `Rui_72`, `Rui_73`, `Rui_74`, `Rui_76`, `Rui_77`, `Rui_78`, `Rui_79`, `Rui_80`, `Rui_81`, `Rui_82`, `Rui_83`, `Rui_84`, `Rui_85`, `Rui_86`, `Rui_87`, `Rui_88`, `Rui_89`, `Rui_90`, `Rui_91`, `Rui_92`, `Rui_93`, `Rui_94`, `Rui_95`, `Rui_96`, `Rui_97`, `Rui_98`, `Rui_99`, `Rui_100`) VALUES
@@ -1444,7 +1445,7 @@ INSERT INTO `rating_matrix` (`id_user`, `Rui_1`, `Rui_2`, `Rui_3`, `Rui_4`, `Rui
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -1456,7 +1457,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `age`, `gender`, `zipcode`, `id_occupation`) VALUES
@@ -2409,78 +2410,78 @@ INSERT INTO `user` (`id_user`, `age`, `gender`, `zipcode`, `id_occupation`) VALU
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- Indexes for table `data`
+-- Indeks untuk tabel `data`
 --
 ALTER TABLE `data`
   ADD KEY `id_user` (`id_user`),
   ADD KEY `id_item` (`id_item`);
 
 --
--- Indexes for table `item`
+-- Indeks untuk tabel `item`
 --
 ALTER TABLE `item`
   ADD PRIMARY KEY (`id_item`);
 
 --
--- Indexes for table `occupation`
+-- Indeks untuk tabel `occupation`
 --
 ALTER TABLE `occupation`
   ADD PRIMARY KEY (`id_occupation`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`),
   ADD KEY `id_occupation` (`id_occupation`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `item`
+-- AUTO_INCREMENT untuk tabel `item`
 --
 ALTER TABLE `item`
   MODIFY `id_item` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
--- AUTO_INCREMENT for table `occupation`
+-- AUTO_INCREMENT untuk tabel `occupation`
 --
 ALTER TABLE `occupation`
   MODIFY `id_occupation` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=944;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `data`
+-- Ketidakleluasaan untuk tabel `data`
 --
 ALTER TABLE `data`
   ADD CONSTRAINT `data_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `data_ibfk_2` FOREIGN KEY (`id_item`) REFERENCES `item` (`id_item`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `user`
+-- Ketidakleluasaan untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_occupation`) REFERENCES `occupation` (`id_occupation`) ON DELETE CASCADE ON UPDATE CASCADE;
